@@ -39,7 +39,7 @@ Then install by dpkg and apt-get:
 
     # there are complain about missing dependency package when
     # run this command, don't worry, just ignore it
-    dpkg -i PACKAG_FILE.deb
+    dpkg -i PACKAGE_FILE.deb
 
     apt-get install -f
 
