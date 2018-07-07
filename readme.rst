@@ -50,8 +50,8 @@ MacOS
 
     installer -pkg PACKAGE_FILE.pkg -target /
 
-Active VIM's Plugin
-===================
+Usage
+=====
 
 After installation, VIM's plugin is not activated. To activate, run:
 
@@ -59,8 +59,14 @@ After installation, VIM's plugin is not activated. To activate, run:
 
     # goto user's directory to activate VIM's plugin
     # replace USER with specific username
-    $ cd /home/USER
-    $ ln -s /etc/magnus/vimrc .vimrc
+    cd /home/USER
+    ln -s /etc/magnus/vimrc .vimrc
+
+Now VIM is ready to use. See more manual in man page:
+
+.. code-block:: bash
+
+    man magnus
 
 Development
 ===========
