@@ -10,4 +10,3 @@ pkgbuild --identifier leptons.kevin.magnus \
     --root dist/src \
     --version 2.0.0 \
     dist/magnus.pkg
-    

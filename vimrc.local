@@ -27,23 +27,9 @@ func! s:load_plugin(name)
     exec 'runtime! '.a:name.'/colors/*.vim'
 endf
 
-" disctraction [disabled]
+" disctraction 
 call s:load_plugin('distraction')
 let g:colors_name='distraction'
-
-" command-t
-exec 'runtime! ./command-t/autoload/commandt/mirkwood.vim'
-call s:load_plugin('command-t')
-let g:CommandTWildIgnore=&wildignore . ",dest,dist,build,
-            \.git,
-            \venv,*.egg-info,__pycache__,*.pyc,
-            \node_modules,
-            \cmake-build-debug"
-let g:CommandTMinHeight=15
-let g:CommandTMaxHeight=15
-let g:CommandTInputDebounce=100
-let g:CommandTCursorColor='PmenuSel'
-let g:CommandTInputDebounce=300
 
 " nerdcommenter
 call s:load_plugin('nerdcommenter')
@@ -51,21 +37,44 @@ call s:load_plugin('nerdcommenter')
 " auto-pairs
 call s:load_plugin('auto-pairs')
 
-" youcompleteme
-call s:load_plugin('you-complete-me')
-let g:ycm_global_ycm_extra_conf='$YCM_GLOBAL_CONF'
-let g:ycm_server_python_interpreter='$YCM_PYTHON_EXE'
-let g:ycm_show_diagnostics_ui=0
-let g:ycm_filetype_whitelist={'*': 1}
-let g:ycm_enable_diagnostic_signs=0
-let g:ycm_confirm_extra_conf=0
-let g:ycm_filetype_blacklist={'txt': 0}
+" ctrlp.vim
+let g:ctrlp_map = '<leader>t'
+let g:ctrlp_prompt_mappings = {
+    \ 'ToggleType(1)':        ['<c-up>'],
+    \ 'ToggleType(-1)':       ['<c-down>'],
+    \ 'PrtClearCache()':      ['c-f'],
+    \ }
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/](
+    \\.git|
+    \build|dest|dist|tmp|
+    \cmake-build-debug|
+    \node_modules|
+    \venv|egg-info|__pycache__
+    \)$',
+    \ 'file': '\v\.(\swp|swo|so|a|pyc)$',
+    \ }
+let g:ctrlp_lazy_update = 250
+let g:ctrlp_match_window='bottom,order:btt,min:11:max:11:results:10'
+let g:ctrlp_line_prefix = ' '
+let g:ctrlp_match_current_file = 1
+let g:ctrlp_buffer_func = { 'enter': 'BrightHighlightOn' }
+
+function BrightHighlightOn()
+    hi! link CursorLine PmenuSel
+endfunction
+
+call s:load_plugin('ctrlp.vim')
 
 " vim-easymotion
 call s:load_plugin('vim-easymotion')
-call s:load_plugin('incsearch')
-call s:load_plugin('incsearch-easymotion')
+call s:load_plugin('incsearch.vim')
+call s:load_plugin('incsearch-easymotion.vim')
 map <SPACE> <Plug>(incsearch-easymotion-stay)
+
+"super tab
+call s:load_plugin('supertab')
+let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " shell operations
 map <F2> :!
