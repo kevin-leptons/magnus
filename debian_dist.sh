@@ -10,7 +10,7 @@ rm -rf dest dist
 mkdir -vp dest/etc/vim dist
 cp -r vim dest/etc/vim/magnus
 
-cp -r vimrc.local dest/etc/vim 
+cp -r vim/vimrc.local dest/etc/vim 
 VIM_PLUGIN_DIR="\/etc\/vim\/$PKG_NAME"
 sed -i -e "s/\$VIM_PLUGIN_DIR/${VIM_PLUGIN_DIR}/g" dest/etc/vim/vimrc.local
 
