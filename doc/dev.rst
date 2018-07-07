@@ -15,19 +15,25 @@ Create Distribution Package
 
 Update submodule if it is required:
 
-    $ git submodule init
-    $ git submodule update
+.. code-block:: bash
 
-Update version in 'package/spec.sh' if it is required. 
+    git submodule init
+    git submodule update
+
+Update version in 'package/spec.sh' if it is required.
 
 Then run script to create distribution file:
 
 To create Debian package, run:
 
-    $ ./debian_dist.sh
+.. code-block:: bash
+
+    ./debian_dist.sh
 
 To create MacOS package, run:
 
-    $ ./macos_dist.sh
+.. code-block:: bash
 
-If packaging is complete, a package file will be put in 'dist/' directory.
+    ./macos_dist.sh
+
+If packaging is completed, a package file will be put in 'dist/' directory.
