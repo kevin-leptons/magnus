@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-if [ -d dist ]; then
-    rm -rf dist
-fi
-mkdir -vp dist/src
-cp -r module/* dist/src
+set -e
+
+./build_unix_fs.sh
+
+source package/spec.sh
 
 pkgbuild --identifier leptons.kevin.magnus \
-    --root dist/src \
-    --version 2.0.0 \
-    dist/magnus.pkg
+    --root dest \
+    --version ${PKG_VERSION} \
+    dist/magnus_${PKG_VERSION}.pkg

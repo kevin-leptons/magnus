@@ -6,7 +6,7 @@ source package/spec.sh
 
 BUILD_DATE=$(date)
 
-rm -rf dest dist
+m -rf dest dist
 mkdir -vp dest/etc/vim dist
 cp -r vim dest/etc/vim/magnus
 
