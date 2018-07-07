@@ -46,6 +46,22 @@ Then install by dpkg and apt-get:
 MacOS
 -----
 
+.. code-block:: bash
+
+    installer -pkg PACKAGE_FILE.pkg -target /
+
+Active VIM's Plugin
+===================
+
+After installation, VIM's plugin is not activated. To activate, run:
+
+.. code-block:: bash
+
+    # goto user's directory to activate VIM's plugin
+    # replace USER with specific username
+    $ cd /home/USER
+    $ ln -s /etc/magnus/vimrc .vimrc
+
 Development
 ===========
 

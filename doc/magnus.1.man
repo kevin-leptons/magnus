@@ -34,10 +34,24 @@ section for detail. 'man vim' is exception, it is text editor part.
 
 .SH TEXT EDITOR
 
-Text editor is VIM - Vi IMproved. To start it, run 'vim'. VIM loads plugins
-and configuration then ready to uses, immediately. To get basic knowledge about
-VIM, see 'man vim'. There are additional features of VIM with
-.B magnus:
+Text editor is VIM - Vi IMproved. To get basic knowledge about VIM, see 'man
+vim'. VIM's plugins is not activated after installation **magnus** because
+there are not portable way to do that. To activate it , do by hands:
+
+.RS 4
+$ cd
+.br
+$ ln -s /etc/magnus/vimrc .vimrc
+.RE
+
+After activate VIM's plugin, start VIM:
+
+.RS 4
+$ vim
+.RE
+
+VIM loads plugins and configuration automatically. It is ready to uses,
+immediately And there are additional features:
 
 Quick open file
 
