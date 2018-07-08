@@ -58,6 +58,7 @@ let g:ctrlp_lazy_update = 250
 let g:ctrlp_match_window='bottom,order:btt,min:11:max:11:results:10'
 let g:ctrlp_line_prefix = ' '
 let g:ctrlp_match_current_file = 1
+let g:ctrlp_open_new_file = 'r'
 let g:ctrlp_buffer_func = { 'enter': 'BrightHighlightOn' }
 
 function BrightHighlightOn()
