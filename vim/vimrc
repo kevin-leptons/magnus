@@ -42,7 +42,7 @@ let g:ctrlp_map = '<leader>t'
 let g:ctrlp_prompt_mappings = {
     \ 'ToggleType(1)':        ['<c-up>'],
     \ 'ToggleType(-1)':       ['<c-down>'],
-    \ 'PrtClearCache()':      ['c-f'],
+    \ 'PrtClearCache()':      ['<c-f>'],
     \ }
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/](
