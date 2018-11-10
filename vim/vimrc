@@ -16,6 +16,7 @@ let skip_defaults_vim=1
 set statusline=%f\ %=%l/%L\ %c\ %3p%%
 set laststatus=2 
 set wildmenu
+set cino=N-s
 
 " load plugin function
 let g:magnus_plugins='$VIM_PLUGIN_DIR'
