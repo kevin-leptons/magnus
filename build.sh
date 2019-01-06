@@ -13,11 +13,11 @@ UNAME=$(uname)
 rm -rf dest dist
 mkdir -vp dest dist
 
-mkdir -vp dest/usr/lib
-cp -r vim dest/usr/lib/magnus
+mkdir -vp dest/usr/share
+cp -r vim dest/usr/share/magnus
 
-VIM_PLUGIN_DIR="\/usr\/lib\/magnus\/$PKG_NAME"
-sed -i -e "s/\$VIM_PLUGIN_DIR/${VIM_PLUGIN_DIR}/g" dest/usr/lib/magnus/vimrc
+VIM_PLUGIN_DIR="\/usr\/share\/$PKG_NAME"
+sed -i -e "s/\$VIM_PLUGIN_DIR/${VIM_PLUGIN_DIR}/g" dest/usr/share/magnus/vimrc
 
 MAN_DIR=dest/usr/share/man/man1
 MAN_FILE=$MAN_DIR/magnus.1
