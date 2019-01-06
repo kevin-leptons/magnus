@@ -2,7 +2,7 @@ v3.0.0
 ======
 
 * Drop support for macOS.
-* Enable nowrap mode.
+* Enable nowrap for VIM mode.
 * Move package from "/etc/magnus" to "/usr/share/magnus"
 
 v2.0.0
