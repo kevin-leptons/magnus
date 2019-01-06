@@ -2,6 +2,7 @@ v3.0.0
 ======
 
 * Drop support for macOS.
+* Enable nowrap mode.
 
 v2.0.0
 ======

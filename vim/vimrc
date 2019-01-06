@@ -8,8 +8,8 @@ set expandtab
 set ignorecase
 set fileencoding=utf-8
 set encoding=utf-8
-set nocompatible 
-filetype indent plugin on 
+set nocompatible
+filetype indent plugin on
 set completeopt-=preview
 set scrolloff=999
 let skip_defaults_vim=1
@@ -17,6 +17,7 @@ set statusline=%f\ %=%l/%L\ %c\ %3p%%
 set laststatus=2 
 set wildmenu
 set cino=N-s
+set nowrap
 
 " load plugin function
 let g:magnus_plugins='$VIM_PLUGIN_DIR'
@@ -28,7 +29,7 @@ func! s:load_plugin(name)
     exec 'runtime! '.a:name.'/colors/*.vim'
 endf
 
-" disctraction 
+" disctraction
 call s:load_plugin('distraction')
 let g:colors_name='distraction'
 
