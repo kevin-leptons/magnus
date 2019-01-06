@@ -4,13 +4,9 @@
 $PKG_NAME \- software development tool kit
 
 .SH SYNOPSIS
-see 'man vim'
+magnus link
 .br
-see 'man gcc'
-.br
-see 'man gdb'
-.br
-see 'man python'
+magnus unlink
 
 .SH DESCRIPTION
 .B magnus
@@ -27,21 +23,21 @@ page, see
 section for detail.
 
 Code executor is set of programs which use to create, debug and execute
-program from source code. Code executor is not describes in this manual. To
-read about it, please refer to related man page, see 
-.B SYNOPSIS
-section for detail. 'man vim' is exception, it is text editor part.
+program from source code. For more detail, see correspond man page of. 
+
+.IP \[bu] 2
+gcc
+.IP \[bu]
+python
 
 .SH TEXT EDITOR
 
 Text editor is VIM - Vi IMproved. To get basic knowledge about VIM, see 'man
-vim'. VIM's plugins is not activated after installation **magnus** because
-there are not portable way to do that. To activate it , do by hands:
+vim'. VIM's plugins is not activated after installation because VIM
+configuration is separate for users. To activate it, do by hands:
 
 .RS 4
-$ cd
-.br
-$ ln -s /etc/magnus/vimrc .vimrc
+$ magnus link
 .RE
 
 After activate VIM's plugin, start VIM:
@@ -50,40 +46,42 @@ After activate VIM's plugin, start VIM:
 $ vim
 .RE
 
+Or disable VIM's plugin by.
+
+.RS 4
+$ magnus unlink
+.RE
+
 VIM loads plugins and configuration automatically. It is ready to uses,
 immediately And there are additional features:
 
-Quick open file
-
-Quick search.
-
-Auto complete.
-
-Auto open bracket.
-
-Quick comment.
-
+.IP \[bu] 2
+Auto complete
+.IP \[bu]
+Auto open bracket
+.IP \[bu]
+Quick comment
+.IP \[bu]
 Create and remove session
-
+.IP \[bu]
 Auto save
-
+.IP \[bu]
 Quick open and close tab
-
+.IP \[bu]
 Quick compile
-
+.IP \[bu]
 Quick run command
-
 
 .SH FILES
 .B
-/etc/vim/vimrc.local
+/usr/share/magnus/
 .br
-Configuration for VIM and VIM's plugins.
+Library directory.
 
 .B
-/etc/vim/magnus/
+/home/$USER/.vimrc
 .br
-VIM plugins.
+VIM configuration file when mangus is enable for $USER.
 
 .SH REFERENCES
 .B magnus's repository 

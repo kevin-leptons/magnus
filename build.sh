@@ -16,6 +16,9 @@ mkdir -vp dest dist
 mkdir -vp dest/usr/share
 cp -r vim dest/usr/share/magnus
 
+mkdir -vp dest/usr/bin
+cp cli.sh dest/usr/bin/magnus
+
 VIM_PLUGIN_DIR="\/usr\/share\/$PKG_NAME"
 sed -i -e "s/\$VIM_PLUGIN_DIR/${VIM_PLUGIN_DIR}/g" dest/usr/share/magnus/vimrc
 
