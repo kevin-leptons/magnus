@@ -1,3 +1,8 @@
+v3.0.0
+======
+
+* Drop support for macOS.
+
 v2.0.0
 ======
 
@@ -34,7 +39,7 @@ v0.11.0
 * Fix missing session current directory
 * Add C++ completion to ycm_extra_conf
 * Use :make command with <F5>, <F7> and <F8> to debug C/C++
-  
+
 v0.10.0
 =======
 
@@ -90,7 +95,7 @@ v0.4.0
 
 * Turn off highlight bracket
 * Keep cursor at middle of screen
-* Keep curosor during scroll by Ctrl + F, Ctrl + B, Page Up, Page Down 
+* Keep curosor during scroll by Ctrl + F, Ctrl + B, Page Up, Page Down
 * Do not change page during type search
 * Remove reserved line when next and prev page
 

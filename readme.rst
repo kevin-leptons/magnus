@@ -5,10 +5,9 @@ magnus
 * Author: Kevin Leptons <kevin.leptons@gmail.com>
 * Version: v2
 
-
 **magnus** is software development tool kit for C, C++, Python. It is not a
 program, it is meta package. It provides minimum environment for develop
-without effort to install related packages and write config files. 
+without effort to install related packages and write config files.
 
 Install
 =======

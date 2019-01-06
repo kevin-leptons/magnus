@@ -2,8 +2,6 @@
 
 set -e
 
-./build_unix_fs.sh
-
 source package/spec.sh
 
 cp -r package/debian dest/DEBIAN
