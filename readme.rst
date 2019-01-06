@@ -3,7 +3,7 @@ magnus
 
 * License: GPLv2
 * Author: Kevin Leptons <kevin.leptons@gmail.com>
-* Version: v2
+* Version: v3
 
 **magnus** is software development tool kit for C, C++, Python. It is not a
 program, it is meta package. It provides minimum environment for develop
