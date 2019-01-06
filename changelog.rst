@@ -5,6 +5,7 @@ v3.0.0
 * Enable nowrap for VIM mode.
 * Move package from "/etc/magnus" to "/usr/share/magnus".
 * Command window is half of window size.
+* Add magnus CLI.
 
 v2.0.0
 ======
