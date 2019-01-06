@@ -3,7 +3,8 @@ v3.0.0
 
 * Drop support for macOS.
 * Enable nowrap for VIM mode.
-* Move package from "/etc/magnus" to "/usr/share/magnus"
+* Move package from "/etc/magnus" to "/usr/share/magnus".
+* Command window is half of window size.
 
 v2.0.0
 ======
