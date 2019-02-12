@@ -28,12 +28,4 @@ To create Debian package, run:
 
 .. code-block:: bash
 
-    ./debian_dist.sh
-
-To create MacOS package, run:
-
-.. code-block:: bash
-
-    ./macos_dist.sh
-
-If packaging is completed, a package file will be put in 'dist/' directory.
+    make dist
