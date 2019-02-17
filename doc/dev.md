@@ -3,9 +3,9 @@
 ## File System Structure
 
 * `doc/`: Document files.
-* `vim/`: Source code of VIM's plugins.
 * `dest/`: Temporary build files.
 * `dist/`: Distribution files.
+* `vim/`: Source code of VIM's plugins.
 * `package/`: Specification files for build distributed package.
 
 ## Create Distributed Package

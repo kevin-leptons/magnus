@@ -13,7 +13,9 @@ without effort to install related packages and write config files.
 There are only one Operating System is supported: Debian-like
 
 ```bash
-
+curl -s https://packagecloud.io/install/repositories/kevin_leptons/trop/script.deb.sh | sudo bash
+apt update
+apt install magnus
 ```
 
 ## Usage
