@@ -14,10 +14,11 @@ set completeopt-=preview
 set scrolloff=999
 let skip_defaults_vim=1
 set statusline=%f\ %=%l/%L\ %c\ %3p%%
-set laststatus=2 
+set laststatus=2
 set wildmenu
 set cino=N-s
 set nowrap
+set mouse=a
 exec 'set cmdwinheight=' . winheight(0)/2
 
 " load plugin function
