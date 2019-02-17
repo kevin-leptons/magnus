@@ -35,5 +35,6 @@ man magnus
 
 ## References
 
-* Changelog: [changelog](changelog.md)
-* Development: [doc/dev.md](doc/dev.md)
+* [Changelog](changelog.md)
+* [Contribution](contribution.md)
+* [Development](doc/dev.md)
