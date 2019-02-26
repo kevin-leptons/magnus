@@ -11,7 +11,6 @@ set encoding=utf-8
 set nocompatible
 filetype indent plugin on
 set completeopt-=preview
-set scrolloff=999
 let skip_defaults_vim=1
 set statusline=%f\ %=%l/%L\ %c\ %3p%%
 set laststatus=2

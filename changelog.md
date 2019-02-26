@@ -5,6 +5,7 @@
 * Use [trop/vspec](https://github.com/kevin-leptons/trop_vspec) for versioning
 * Add: Allow mouse on terminal
 * Change: User markdown for document
+* Remove: Move cursor to middle of screen automatically
 
 ## v3.0.0
 
