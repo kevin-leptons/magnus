@@ -6,6 +6,7 @@
 * Add: Allow mouse on terminal
 * Change: User markdown for document
 * Remove: Move cursor to middle of screen automatically
+* Improve: Color schema
 
 ## v3.0.0
 

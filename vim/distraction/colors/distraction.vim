@@ -2,19 +2,21 @@
 " Maintainer:  Kevin Leptons <kevin.leptons@gmail.com>
 " Last Change: 2017 Sept
 
-hi clear
 if exists("syntax_on")
   syntax reset
 endif
+hi clear
 
 if &bg == "light"
-    hi magnus_normal            ctermfg=black       ctermbg=none
-    hi magnus_normal_sel        ctermfg=white       ctermbg=black  cterm=none
-    hi magnus_normal_italic     ctermfg=black       ctermbg=none   cterm=italic
+    hi magnus_none              ctermfg=none        ctermbg=none   cterm=none
+    hi magnus_normal            ctermfg=red       ctermbg=none
+    hi magnus_normal_sel        ctermfg=grey       ctermbg=black  cterm=none
+    hi magnus_info              ctermfg=grey        ctermbg=none    cterm=italic
 else
-    hi magnus_normal            ctermfg=grey        ctermbg=none
-    hi magnus_normal_sel        ctermfg=black       ctermbg=grey   cterm=none
-    hi magnus_normal_italic     ctermfg=grey        ctermbg=none   cterm=italic
+    hi magnus_none              ctermfg=none        ctermbg=none   cterm=none
+    hi magnus_normal            ctermfg=none        ctermbg=none
+    hi magnus_normal_sel        ctermfg=darkgrey       ctermbg=grey   cterm=none
+    hi magnus_info              ctermfg=darkgrey        ctermbg=none cterm=italic
 endif
 hi magnus_danger            ctermfg=darkred     ctermbg=none        cterm=none
 hi magnus_danger_sel        ctermfg=white       ctermbg=darkred
@@ -22,7 +24,6 @@ hi magnus_warning           ctermfg=yellow      ctermbg=none
 hi magnus_warning_sel       ctermfg=black       ctermbg=yellow
 hi magnus_success           ctermfg=darkgreen   ctermbg=none       
 hi magnus_success_sel       ctermfg=white       ctermbg=darkgreen       
-hi magnus_info              ctermfg=darkblue    ctermbg=none
 hi magnus_info_sel          ctermfg=white       ctermbg=darkblue
 hi magnus_featured          ctermfg=darkyellow  ctermbg=none        cterm=none
 hi magnus_featured_sel      ctermfg=white       ctermbg=darkyellow  cterm=none
@@ -34,16 +35,16 @@ hi magnus_bar               ctermfg=black       ctermbg=grey        cterm=none
 hi magnus_bar_inactive      ctermfg=black       ctermbg=grey        cterm=none
 
 hi! link Normal             magnus_normal
-hi! link Comment            magnus_normal_italic
-hi! link Constant           magnus_value
-hi! link Identifier         magnus_normal
-hi! link Statement          magnus_featured
-hi! link PreProc            magnus_featured
-hi! link Type               magnus_featured
-hi! link Special            magnus_normal 
+hi! link Comment            magnus_info
+hi! link Constant           magnus_none
+hi! link Identifier         magnus_none
+hi! link Statement          magnus_none
+hi! link PreProc            magnus_none
+hi! link Type               magnus_none
+hi! link Special            magnus_none 
 hi! link SpecialChar        magnus_value
 hi! link Underlined         magnus_info
-hi! link Ignore             magnus_normal
+hi! link Ignore             magnus_none
 hi! link Error              magnus_danger_sel
 hi! link Todo               magnus_info
 hi! link ColorColumn        magnus_line 
@@ -51,26 +52,26 @@ hi! link Pmenu              magnus_window
 hi! link PmenuSel           magnus_featured_sel 
 hi! link MatchParen         magnus_featured_sel
 hi! link Normal             magnus_normal
-hi! link String             magnus_value
-hi! link Character          magnus_value
-hi! link Number             magnus_value
-hi! link Boolean            magnus_value
-hi! link Float              magnus_value
-hi! link Function           magnus_featured
-hi! link Conditional        magnus_featured
-hi! link Repeat             magnus_featured
-hi! link Label              magnus_featured
-hi! link Operator           magnus_featured
-hi! link Keyword            magnus_normal
-hi! link Exception          magnus_normal
-hi! link Include            magnus_featured
-hi! link Define             magnus_featured
-hi! link Macro              magnus_featured
-hi! link PreCondit          magnus_featured
-hi! link StorageClass       magnus_featured
-hi! link Structure          magnus_featured
-hi! link Typedef            magnus_featured
-hi! link Delimiter          magnus_normal
+hi! link String             magnus_none
+hi! link Character          magnus_none
+hi! link Number             magnus_none
+hi! link Boolean            magnus_none
+hi! link Float              magnus_none
+hi! link Function           magnus_none
+hi! link Conditional        magnus_none
+hi! link Repeat             magnus_none
+hi! link Label              magnus_none
+hi! link Operator           magnus_none
+hi! link Keyword            magnus_none
+hi! link Exception          magnus_none
+hi! link Include            magnus_none
+hi! link Define             magnus_none
+hi! link Macro              magnus_none
+hi! link PreCondit          magnus_none
+hi! link StorageClass       magnus_none
+hi! link Structure          magnus_none
+hi! link Typedef            magnus_none
+hi! link Delimiter          magnus_none
 hi! link SpecialComment     magnus_info
 hi! link Debug              magnus_info
 hi! link ErrorMsg           magnus_danger_sel
