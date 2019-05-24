@@ -4,6 +4,7 @@
 
 * Use [trop/vspec](https://github.com/kevin-leptons/trop_vspec) for versioning
 * Add: Allow mouse on terminal
+* Add: Enable syntax highlight
 * Change: User markdown for document
 * Remove: Move cursor to middle of screen automatically
 * Improve: Color schema

@@ -18,6 +18,7 @@ set cino=N-s
 set nowrap
 set mouse=a
 exec 'set cmdwinheight=' . winheight(0)/2
+syntax on
 
 " load plugin function
 let g:magnus_plugins='$VIM_PLUGIN_DIR'
