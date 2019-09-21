@@ -64,6 +64,7 @@ call s:load_plugin('magnus_session')
 " end: load magnus_session
 
 set nocompatible
+set tw=78
 set listchars=tab:>~
 set tabstop=4
 set shiftwidth=4
