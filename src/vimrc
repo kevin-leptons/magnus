@@ -1,4 +1,4 @@
-" function: load plugin from directory 
+" function: load plugin from directory
 let g:plugin_dir='$VIM_PLUGIN_DIR'
 exec 'set rtp^='.g:plugin_dir
 func! s:load_plugin(name)

@@ -3,6 +3,7 @@ Version: $PKG_VERSION
 Section: base
 Priority: optional
 Architecture: all
-Depends: vim (>= 2:8.0), vim (<< 3:9.0)
+Depends: vim (>= 2:8.0), vim (<< 3:9.0),
+         vim-nox (>= 2:8.0), vim-nox(<< 2:9.0)
 Maintainer: Kevin Leptons<kevin.leptons@gmail.com>
 Description: Text editor, C and C++ compiler, System revisio control

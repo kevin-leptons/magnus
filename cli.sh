@@ -4,9 +4,10 @@ USER_VIMRC="$HOME/.vimrc"
 
 cli_help() {
     echo "USAGE"
-    echo "    $0 link. Enable for current user"
-    echo "    $0 unlink. Disable for current user"
-    echo "    $0 --help. Show this help"
+    echo "    magnus link       Enable for current user"
+    echo "    magnus unlink     Disable for current user"
+    echo "    magnus --help     Show this help"
+    echo "    magnus --version  Show version"
     echo "REFERENCES"
     echo "    See more detail with 'man magnus'."
 }
@@ -19,6 +20,10 @@ cli_unlink() {
     rm -r $USER_VIMRC
 }
 
+cli_version() {
+    echo "MAGNUS_VERSION"
+}
+
 case "$1" in
     "link")
         cli_link
@@ -28,6 +33,9 @@ case "$1" in
 	    ;;
     "--help")
         cli_help
+        ;;
+    "--version")
+        cli_version
         ;;
     *)
         cli_help

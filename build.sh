@@ -15,10 +15,11 @@ git submodule update
 rm -rf dest
 
 mkdir -vp "$PKG_DIR"
-rsync --exclude-from=dist_exclude -r vim/ "$PKG_DIR"
+rsync --exclude-from=dist_exclude -r src/ "$PKG_DIR"
 
 mkdir -vp "$(dirname "$BIN_FILE")"
 cp cli.sh "$BIN_FILE"
+sed_replace "s/MAGNUS_VERSION/${PKG_VERSION}/g" "$BIN_FILE"
 
 INSTALL_DIR_ESCAPE=$(echo "$INSTALL_DIR" | sed 's/\//\\\//g')
 sed_replace "s/\$VIM_PLUGIN_DIR/${INSTALL_DIR_ESCAPE}/g" \

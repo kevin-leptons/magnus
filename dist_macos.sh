@@ -3,9 +3,14 @@
 set -e
 
 source package/spec.sh
+TAR_NAME="magnus_${PKG_VERSION}"
 
-pkgbuild --identifier magnus \
-	--root dest \
-	--version ${PKG_VERSION} \
-	--install-location /usr/local \
-	dist/magnus_${PKG_VERSION}.pkg
+rm -rf dist
+mkdir -vp dist
+if ! [ -d dest ]; then
+    echo "No build files"
+    exit 1
+fi
+cp -r dest "dist/$TAR_NAME"
+tar --directory dist -czvf "dist/${TAR_NAME}.tar.gz" "$TAR_NAME"
+rm -rf "dist/$TAR_NAME"
