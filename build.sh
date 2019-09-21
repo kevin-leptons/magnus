@@ -15,7 +15,7 @@ git submodule update
 rm -rf dest
 
 mkdir -vp "$PKG_DIR"
-rsync --exclude-from=dist_exclude -r src/ "$PKG_DIR"
+rsync --exclude-from=dist_exclude -r plugin/ "$PKG_DIR"
 cp vimrc "$PKG_DIR/vimrc"
 
 mkdir -vp "$(dirname "$BIN_FILE")"
