@@ -8,7 +8,7 @@
   into directory `/opt/magnus`. Binary file is installed into
   `/usr/local/bin/magnus`. Manual page is installed into
   `/usr/share/man/man1/magnus.1.gz`.
-* Add: Support macOS under tar distribution
+* Add: Support tarbar distribution.
 
 ## v4.0.0
 
