@@ -90,3 +90,4 @@ map <TAB> :tabn<CR>
 map <S-TAB> :tabp<CR>
 map <C-w> :q<CR>
 map <C-e> :qa<CR>
+map <C-r> yiwq:i%s/<Esc>pa//gc<Esc>bhi
