@@ -33,12 +33,12 @@
 This version is new completely. It does not version which is fixes bugs
 from older versions.
 
-* Support MacOS 10.x Operating System. It can works on other version but that
+* Support MacOS 10.x Operating SYSTEMD. It can works on other version but that
   is not guaranteed.
-* Support Debian 8.x Operating System. It can works on other Debian versions
-  or other Debian based Operating System but that is not guaranteed.
+* Support Debian 8.x Operating SYSTEMD. It can works on other Debian versions
+  or other Debian based Operating SYSTEMD but that is not guaranteed.
 * VIM with plugins, support for text editor and file navigation.
-* C, C++ compiler, debuger. Depend on Operatin System, compiler and debuger is
+* C, C++ compiler, debuger. Depend on Operatin SYSTEMD, compiler and debuger is
   different.
 * Python v2.x and v3.x.
 
@@ -67,7 +67,7 @@ from older versions.
 * Add column number into statusline
 * Change indent and tab size to 8 spaces
 * Add tagbar plugin to show functions in file
-* Add nerdtree plugin to show file system
+* Add nerdtree plugin to show file SYSTEMD
 
 ## v0.9.0
 

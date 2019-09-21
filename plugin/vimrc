@@ -60,13 +60,9 @@ call s:load_plugin('supertab')
 let g:SuperTabDefaultCompletionType = "<c-n>"
 " end: load super tab
 
-" begin: load magnus_session
-call s:load_plugin('magnus_session')
-" end: load magnus_session
-
-" begin: load magnus_color
-call s:load_plugin('magnus_color')
-" end: load magnus_color
+" begin: load magnus
+call s:load_plugin('magnus')
+" end: load magnus
 
 set nocompatible
 set tw=78
@@ -84,10 +80,3 @@ set cino=N-s
 set autowriteall
 
 filetype indent plugin on
-
-map <LEADER><TAB> :tabnew<CR>
-map <TAB> :tabn<CR>
-map <S-TAB> :tabp<CR>
-map <C-w> :q<CR>
-map <C-e> :qa<CR>
-map <C-r> yiwq:i%s/<Esc>pa//gc<Esc>bhi
