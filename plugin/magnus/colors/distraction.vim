@@ -1,6 +1,6 @@
 " Vim color file
 " Maintainer:  Kevin Leptons <kevin.leptons@gmail.com>
-" Last Change: 2017 Sept
+" Last Change: 2019 Sept
 
 if exists("syntax_on")
   syntax reset

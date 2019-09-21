@@ -5,21 +5,21 @@ let g:tmp_dir = 'tmp'
 let g:session_file = g:tmp_dir . '/session.vim'
 
 function! EchoInfo(msg)
-    echohl MoreMsg | echo a:msg | echohl None 
+    echohl MoreMsg | echo a:msg | echohl None
 endfunction
 
 function! EchoWarning(msg)
-    echohl WarningMsg | echo a:msg | echohl None 
+    echohl WarningMsg | echo a:msg | echohl None
 endfunction
 
-fu! SaveSession()
+function! session#SaveSession()
     if filereadable(g:session_file)
         call delete(g:session_file)
         exec 'mksession '.g:session_file
     endif
 endfunction
 
-fu! MakeSession()
+function! session#MakeSession()
     if !isdirectory(g:tmp_dir)
         call mkdir(g:tmp_dir)
     endif
@@ -32,8 +32,8 @@ fu! MakeSession()
     endif
 endfunction
 
-fu! LoadSession()
-    if argc() == 0 
+fu! session#LoadSession()
+    if argc() == 0
         if filereadable(g:session_file)
             if g:magnus_session_loaded == 0
                 let g:magnus_session_loaded = 1
@@ -43,6 +43,3 @@ fu! LoadSession()
         endif
     endif
 endfunction
-
-autocmd VimLeave * call SaveSession()
-autocmd VimEnter * nested call LoadSession()

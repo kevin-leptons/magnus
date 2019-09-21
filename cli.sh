@@ -4,21 +4,29 @@ USER_VIMRC="$HOME/.vimrc"
 
 cli_help() {
     echo "USAGE"
-    echo "    $0 link. Enable for current user"
-    echo "    $0 unlink. Disable for current user"
-    echo "    $0 --help. Show this help"
+    echo "    magnus link       Enable for current user"
+    echo "    magnus unlink     Disable for current user"
+    echo "    magnus --help     Show this help"
+    echo "    magnus --version  Show version"
     echo "REFERENCES"
     echo "    See more detail with 'man magnus'."
 }
 
 cli_link() {
-    ln /usr/share/magnus/vimrc $USER_VIMRC 
+    local BIN_DIR="$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)"
+    local PKG_DIR="$BIN_DIR/../../../opt/magnus"
+    local ABS_PKG_DIR="$(cd -P "$PKG_DIR" && pwd)"
+    local VIMRC="$ABS_PKG_DIR/vimrc"
+
+    ln -s "$VIMRC" "$USER_VIMRC"
 }
 
 cli_unlink() {
-    if [ -f $USER_VIMRC ]; then
-        rm $USER_VIMRC
-    fi
+    rm -r $USER_VIMRC
+}
+
+cli_version() {
+    echo "MAGNUS_VERSION"
 }
 
 case "$1" in
@@ -30,6 +38,9 @@ case "$1" in
 	    ;;
     "--help")
         cli_help
+        ;;
+    "--version")
+        cli_version
         ;;
     *)
         cli_help

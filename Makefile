@@ -1,12 +1,15 @@
 all: build
 
 build:
-	./build.sh
+	bash build.sh
 
-dist:
-	./dist.sh
+debian:
+	bash ./dist_debian.sh
+
+tarbar:
+	bash ./dist_tarbar.sh
 
 clean:
 	rm -rf dest dist
 
-.PHONY: all build dist
+.PHONY: all build debian tarbar

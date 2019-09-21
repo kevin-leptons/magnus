@@ -1,2 +1,0 @@
-PKG_NAME="magnus"
-PKG_VERSION="4.0.0"

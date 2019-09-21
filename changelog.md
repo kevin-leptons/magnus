@@ -1,13 +1,24 @@
 # Changelog
 
+## v5.0.0
+
+* Remove: Syntax highlight
+* Remove: Dependency on compiler and debug libraries. From now, project provide
+  only text editor features.
+* Change: On Debian, use new distribution structure. VIM plugins is installed
+  into directory `/opt/magnus`. Binary file is installed into
+  `/usr/local/bin/magnus`. Manual page is installed into
+  `/usr/share/man/man1/magnus.1.gz`.
+* Add: Support tarbar distribution.
+
 ## v4.0.0
 
-* Use [trop/vspec](https://github.com/kevin-leptons/trop_vspec) for versioning
-* Add: Allow mouse on terminal
-* Add: Enable syntax highlight
+* Improve: Color schema
+* Change: Use [trop/vspec](https://github.com/kevin-leptons/trop_vspec) for versioning
 * Change: User markdown for document
 * Remove: Move cursor to middle of screen automatically
-* Improve: Color schema
+* Add: Allow mouse on terminal
+* Add: Enable syntax highlight
 
 ## v3.0.0
 
@@ -22,12 +33,12 @@
 This version is new completely. It does not version which is fixes bugs
 from older versions.
 
-* Support MacOS 10.x Operating System. It can works on other version but that
+* Support MacOS 10.x Operating SYSTEMD. It can works on other version but that
   is not guaranteed.
-* Support Debian 8.x Operating System. It can works on other Debian versions
-  or other Debian based Operating System but that is not guaranteed.
+* Support Debian 8.x Operating SYSTEMD. It can works on other Debian versions
+  or other Debian based Operating SYSTEMD but that is not guaranteed.
 * VIM with plugins, support for text editor and file navigation.
-* C, C++ compiler, debuger. Depend on Operatin System, compiler and debuger is
+* C, C++ compiler, debuger. Depend on Operatin SYSTEMD, compiler and debuger is
   different.
 * Python v2.x and v3.x.
 
@@ -56,7 +67,7 @@ from older versions.
 * Add column number into statusline
 * Change indent and tab size to 8 spaces
 * Add tagbar plugin to show functions in file
-* Add nerdtree plugin to show file system
+* Add nerdtree plugin to show file SYSTEMD
 
 ## v0.9.0
 
