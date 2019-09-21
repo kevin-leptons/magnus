@@ -11,6 +11,6 @@
 
 * [Installation](install.md)
 * [Using](using.md)
-* [Development](doc/dev.md)
+* [Development](dev.md)
 * [Changelog](changelog.md)
 * [Contribution](contribution.md)
