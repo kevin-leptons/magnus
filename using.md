@@ -1,7 +1,7 @@
 # Using
 
 * [Terms](#terms)
-* [Open File](#quick-open-file)
+* [Open File](#open-file)
 * [Open Tab](#open-tab)
 * [Auto Save](#auto-save)
 * [Comment](#comment)
