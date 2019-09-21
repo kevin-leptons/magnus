@@ -2,12 +2,13 @@
 
 ## v4.0.0
 
-* Use [trop/vspec](https://github.com/kevin-leptons/trop_vspec) for versioning
-* Add: Allow mouse on terminal
-* Add: Enable syntax highlight
+* Improve: Color schema
+* Change: Use [trop/vspec](https://github.com/kevin-leptons/trop_vspec) for versioning
 * Change: User markdown for document
 * Remove: Move cursor to middle of screen automatically
-* Improve: Color schema
+* Add: Allow mouse on terminal
+* Add: Enable syntax highlight
+* Add: Support macOS
 
 ## v3.0.0
 

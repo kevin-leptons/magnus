@@ -46,3 +46,4 @@ endfunction
 
 autocmd VimLeave * call SaveSession()
 autocmd VimEnter * nested call LoadSession()
+map <LEADER><LEADER> :call MakeSession()<CR>

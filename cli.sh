@@ -12,7 +12,7 @@ cli_help() {
 }
 
 cli_link() {
-    ln /usr/share/magnus/vimrc $USER_VIMRC 
+    ln -s /usr/local/share/magnus/vimrc $USER_VIMRC 
 }
 
 cli_unlink() {

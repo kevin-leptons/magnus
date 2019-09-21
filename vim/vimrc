@@ -1,62 +1,34 @@
-" display
-set tw=78
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set ignorecase
-set fileencoding=utf-8
-set encoding=utf-8
-set nocompatible
-filetype indent plugin on
-set completeopt-=preview
-let skip_defaults_vim=1
-set statusline=%f\ %=%l/%L\ %c\ %3p%%
-set laststatus=2
-set wildmenu
-set cino=N-s
-set nowrap
-set mouse=a
-exec 'set cmdwinheight=' . winheight(0)/2
-syntax on
-
-" load plugin function
-let g:magnus_plugins='$VIM_PLUGIN_DIR'
-exec 'set rtp^='.g:magnus_plugins
+" function: load plugin from directory 
+let g:plugin_dir='$VIM_PLUGIN_DIR'
+exec 'set rtp^='.g:plugin_dir
 func! s:load_plugin(name)
-    exec 'set rtp+='.g:magnus_plugins.'/'.a:name
-    exec 'runtime! '.a:name.'/plugin/*.vim'
-    exec 'runtime! '.a:name.'/after/*.vim'
-    exec 'runtime! '.a:name.'/colors/*.vim'
+	exec 'set rtp+='.g:plugin_dir.'/'.a:name
+	exec 'runtime! '.a:name.'/plugin/*.vim'
+	exec 'runtime! '.a:name.'/after/*.vim'
+	exec 'runtime! '.a:name.'/colors/*.vim'
 endf
 
-" disctraction
-call s:load_plugin('distraction')
-let g:colors_name='distraction'
-
-" nerdcommenter
+" begin: load nerdcommenter
 call s:load_plugin('nerdcommenter')
+" end: load nerdcommenter
 
-" auto-pairs
-call s:load_plugin('auto-pairs')
-
-" ctrlp.vim
+" begin: load ctrlp.vim
 let g:ctrlp_map = '<leader>t'
 let g:ctrlp_prompt_mappings = {
-    \ 'ToggleType(1)':        ['<c-up>'],
-    \ 'ToggleType(-1)':       ['<c-down>'],
-    \ 'PrtClearCache()':      ['<c-f>'],
-    \ }
+	\ 'ToggleType(1)':		['<c-up>'],
+	\ 'ToggleType(-1)':	   ['<c-down>'],
+	\ 'PrtClearCache()':	  ['<c-f>'],
+	\ }
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/](
-    \\.git|
-    \build|dest|dist|tmp|
-    \cmake-build-debug|
-    \node_modules|
-    \venv|egg-info|__pycache__
-    \)$',
-    \ 'file': '\v\.(\swp|swo|so|a|pyc)$',
-    \ }
+	\ 'dir':  '\v[\/](
+	\\.git|
+	\build|dest|dist|tmp|
+	\cmake-build-debug|
+	\node_modules|
+	\venv|egg-info|__pycache__
+	\)$',
+	\ 'file': '\v\.(\swp|swo|so|a|pyc)$',
+	\ }
 let g:ctrlp_lazy_update = 250
 let g:ctrlp_match_window='bottom,order:btt,min:11:max:11:results:10'
 let g:ctrlp_line_prefix = ' '
@@ -65,47 +37,53 @@ let g:ctrlp_open_new_file = 'r'
 let g:ctrlp_buffer_func = { 'enter': 'BrightHighlightOn' }
 
 function BrightHighlightOn()
-    hi! link CursorLine PmenuSel
+	hi! link CursorLine PmenuSel
 endfunction
 
 call s:load_plugin('ctrlp.vim')
+" end: load ctrlp.vim
 
-" vim-easymotion
+" begin: load autopairs
+call s:load_plugin('auto-pairs')
+" end: load autopairs
+
+" begin: load vim-easymotion
 call s:load_plugin('vim-easymotion')
 call s:load_plugin('incsearch.vim')
 call s:load_plugin('incsearch-easymotion.vim')
 map <SPACE> <Plug>(incsearch-easymotion-stay)
+" end: load vim-easymotion
 
-"super tab
+" begin: load super tab
 call s:load_plugin('supertab')
 let g:SuperTabDefaultCompletionType = "<c-n>"
+" end: load super tab
 
-" shell operations
-map <F2> :!
-map <F4> :!<CR>
-let &makeprg='./ctl build'
-fu! BuildC()
-        :make
-        :cw
-endf
-map <F5> :call BuildC()<CR>
-map <F7> :cprevious<CR>
-map <F8> :cnext<CR>
+" begin: load magnus_session
+call s:load_plugin('magnus_session')
+" end: load magnus_session
 
-" content operations
+set nocompatible
+set listchars=tab:\|-
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+set smartindent
+set nowrap
+set mouse=a
+set ignorecase
+set statusline=%f\ %=%l/%L\ %c\ %3p%%
+set laststatus=2
+set cino=N-s
 set autowriteall
-map <F9> :q<CR>
-map <F10> :wa<CR>
-map <F12> :wa \| qa<CR>
-map <LEADER><LEADER> :call MakeSession()<CR>
 
-" tab operations
+filetype indent plugin on
+
+map <LEADER><TAB> :tabnew<CR>
 map <TAB> :tabn<CR>
 map <S-TAB> :tabp<CR>
-map <LEADER><TAB> :tabnew<CR>
 
-" move between page
-nnoremap <C-f> <C-d><C-d><C-e>
-nnoremap <C-b> <C-u><C-u><C-y>
-map <silent> <PageDown> <C-d><C-d><C-e>
-map <silent> <PageUp> <C-u><C-u><C-y>
+map <LEADER>g <C-w>gf<CR>
+map <LEADER>q :wq<CR>
+map <LEADER>c :waq<CR>
+map <LEADER>s :wa<CR>

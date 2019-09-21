@@ -1,10 +1,10 @@
 all: build
 
 build:
-	./build.sh
+	bash build.sh
 
 dist:
-	./dist.sh
+	bash ./dist.sh
 
 clean:
 	rm -rf dest dist
