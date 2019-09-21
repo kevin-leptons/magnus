@@ -1,5 +1,5 @@
 " function: load plugin from directory
-let g:plugin_dir='$VIM_PLUGIN_DIR'
+let g:plugin_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 exec 'set rtp^='.g:plugin_dir
 func! s:load_plugin(name)
 	exec 'set rtp+='.g:plugin_dir.'/'.a:name

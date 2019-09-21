@@ -13,7 +13,12 @@ cli_help() {
 }
 
 cli_link() {
-    ln -s /opt/magnus/vimrc $USER_VIMRC
+    local BIN_DIR="$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)"
+    local PKG_DIR="$BIN_DIR/../../../opt/magnus"
+    local ABS_PKG_DIR="$(cd -P "$PKG_DIR" && pwd)"
+    local VIMRC="$ABS_PKG_DIR/vimrc"
+
+    ln -s "$VIMRC" "$USER_VIMRC"
 }
 
 cli_unlink() {
