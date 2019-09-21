@@ -5,6 +5,7 @@
 * [Open Tab](#open-tab)
 * [Auto Save](#auto-save)
 * [Search](#search)
+* [Replace](#replace)
 * [Comment](#comment)
 * [Suggestion](#suggestion)
 * [Bracket](#bracket)
@@ -34,8 +35,8 @@
 * **Normal** | `Leader` `Tab` - Open new tab
 * **Normal** | `Tab` - Move to next tab
 * **Normal** | `Shift` + `Tab` - Move to previous tab
-* **Normal** | `Ctrl` + `w` - Close current tab
-* **Normal** | `Ctrl` + `e` - Close all of tabs
+* **Normal** | `Leader` + `w` - Close current tab
+* **Normal** | `Leader` + `q` - Close all of tabs
 
 ## Auto Save
 
@@ -53,6 +54,12 @@
 * **Search** | `Enter` - Enter mode **Search Selection**
 * **Search Selection** | Type highlight key to select word
 * **Search Selection** | `Enter` - Exit mode **Search Selection**
+
+## Replace
+
+* **Normal** | `Leader` a - Start replace all of words which matchs with word
+  under cursor
+* **Normal** | `Leader` s - Start replace a word under cursor
 
 ## Comment
 
