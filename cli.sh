@@ -12,13 +12,11 @@ cli_help() {
 }
 
 cli_link() {
-    ln -s /usr/local/share/magnus/vimrc $USER_VIMRC 
+    ln -s /opt/magnus/vimrc $USER_VIMRC
 }
 
 cli_unlink() {
-    if [ -f $USER_VIMRC ]; then
-        rm $USER_VIMRC
-    fi
+    rm -r $USER_VIMRC
 }
 
 case "$1" in

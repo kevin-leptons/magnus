@@ -4,12 +4,11 @@ set -e
 
 source package/spec.sh
 
-UNAME=$(uname)
-if [[ "$UNAME" == "Linux" ]]; then
-	bash debian_dist.sh
-elif [[ "$UNAME" == "Darwin" ]]; then
-	bash macos_dist.sh
+if [[ "$PLATFORM" == "Linux" ]]; then
+	bash dist_debian.sh
+elif [[ "$PLATFORM" == "Darwin" ]]; then
+	bash dist_macos.sh
 else
-	echo "Does not support package on platform $UNAME"
+	echo "Does not support pack on platform '$PLATFORM'"
 	exit 1
 fi

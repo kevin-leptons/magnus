@@ -1,6 +1,17 @@
 PKG_NAME="magnus"
 PKG_VERSION="4.0.0"
-VIM_PLUGIN_DIR="\/usr\/local\/share\/$PKG_NAME"
-MAN_DIR="dest/share/man/man1"
-MAN_FILE="$MAN_DIR/magnus.1"
 BUILD_DATE=$(date)
+PLATFORM=$(uname)
+
+if [[ "$PLATFORM" == "Linux" ]]; then
+	function sed_replace() {
+		sed -i -e "$1" "$2"
+	}
+elif [[ "$PLATFORM" == "Darwin" ]]; then
+	function sed_replace() {
+		sed -i "" -e "$1" "$2"
+	}
+else
+	echo "Does not support platform '$PLATFORM'"
+	exit 1
+fi
