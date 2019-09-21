@@ -83,8 +83,5 @@ filetype indent plugin on
 map <LEADER><TAB> :tabnew<CR>
 map <TAB> :tabn<CR>
 map <S-TAB> :tabp<CR>
-
-map <LEADER>g <C-w>gf<CR>
-map <LEADER>q :wq<CR>
-map <LEADER>c :waq<CR>
-map <LEADER>s :wa<CR>
+map <C-w> :q<CR>
+map <C-e> :qa<CR>
