@@ -76,6 +76,7 @@
 
 ## Paste
 
+* **Normal** | `F2` - Toggle enter/exit paste mode
 * **Insert** | `F2` - Toggle enter/exit paste mode
 
 ## Comment
