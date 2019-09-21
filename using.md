@@ -76,3 +76,5 @@
 ## Session
 
 * **Normal** | `Leader` `Leader` - Toggle to create/remove session file at `$(pwd)/tmp/session.vim`
+* On update new version, session need to be remove to take changes. Force
+  remove by `rm -rf tmp`

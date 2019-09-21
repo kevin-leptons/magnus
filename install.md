@@ -4,7 +4,7 @@
 
 ```bash
 make
-make dist-debian
+make debian
 sudo dpkg -i dist/magnus_VERSION.deb
 sudo apt install -f
 magnus link             # enable for current user
@@ -18,7 +18,7 @@ vim                     # open VIM to use
 
 ```bash
 make
-make dist-tarbar
+make tarbar
 tar -xf dist/magnus_VERSION.tar.gz --directory INSTALL_DIR
 INSTALL_DIR/usr/local/bin/magnus link   # enable for current user
 vim                                     # open VIM to use

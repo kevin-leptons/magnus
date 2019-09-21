@@ -14,7 +14,7 @@
 
 ```bash
 make
-make dist-debian        # output to dist/magnus_VERSION.deb
+make debian        # output to dist/magnus_VERSION.deb
 ```
 
 ## Create Tarbar Package
@@ -24,5 +24,5 @@ make dist-debian        # output to dist/magnus_VERSION.deb
 
 ```bash
 make
-make dist-tarbar        # output to dist/magnus_VERSION.tar.gz
+make tarbar        # output to dist/magnus_VERSION.tar.gz
 ```

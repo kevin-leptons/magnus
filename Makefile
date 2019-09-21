@@ -3,13 +3,13 @@ all: build
 build:
 	bash build.sh
 
-dist-debian:
+debian:
 	bash ./dist_debian.sh
 
-dist-tarbar:
+tarbar:
 	bash ./dist_tarbar.sh
 
 clean:
 	rm -rf dest dist
 
-.PHONY: all build dist-debian dist-tarbar
+.PHONY: all build debian tarbar
