@@ -2,6 +2,7 @@
 
 ## v5.0.0
 
+* Remove: Syntax highlight
 * Remove: Dependency on compiler and debug libraries. From now, project provide
   only text editor features.
 * Change: On Debian, use new distribution structure. VIM plugins is installed

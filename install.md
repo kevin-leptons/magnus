@@ -2,6 +2,8 @@
 
 ## For Debian-like OS
 
+Target platform: Debian, Ubuntu
+
 ```bash
 make
 make debian
@@ -15,6 +17,7 @@ vim                     # open VIM to use
 
 ## For other UNIX-like OS
 
+Target platform: macOS and other UNIX-like OS
 
 ```bash
 make
