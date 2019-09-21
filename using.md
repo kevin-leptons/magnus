@@ -4,10 +4,10 @@
 * [Open File](#open-file)
 * [Open Tab](#open-tab)
 * [Auto Save](#auto-save)
+* [Search](#search)
 * [Comment](#comment)
 * [Suggestion](#suggestion)
 * [Bracket](#bracket)
-* [Search](#search)
 * [Session](#session)
 
 ## Terms
@@ -42,6 +42,17 @@
 * On changing from tab A to B, tab A will be write automatically
 * On close any tabs, that tab will be write automatically
 * On enter VIM command, all tabs will be write automatically
+
+## Search
+
+* **Normal** | `Space` - Enter mode **Search**
+* **Search** | Type keyword to search, matched words will be highlight
+* **Search** | `Tab` - Fill with previous keyword or move to next result
+* **Search** | `Shift` + `Tab` - Move to previous result
+* **Search** | `Esc` - Exit mode **Search**
+* **Search** | `Enter` - Enter mode **Search Selection**
+* **Search Selection** | Type highlight key to select word
+* **Search Selection** | `Enter` - Exit mode **Search Selection**
 
 ## Comment
 
