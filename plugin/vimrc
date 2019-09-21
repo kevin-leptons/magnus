@@ -1,4 +1,4 @@
-" function: load plugin from directory
+" begin: function load plugin from directory name
 let g:plugin_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 exec 'set rtp^='.g:plugin_dir
 func! s:load_plugin(name)
@@ -7,6 +7,7 @@ func! s:load_plugin(name)
 	exec 'runtime! '.a:name.'/after/*.vim'
 	exec 'runtime! '.a:name.'/colors/*.vim'
 endf
+" end: function load plugin from directory name
 
 " begin: load nerdcommenter
 call s:load_plugin('nerdcommenter')
@@ -79,6 +80,7 @@ set cino=N-s
 set autowriteall
 
 filetype indent plugin on
+syntax on
 
 map <LEADER><TAB> :tabnew<CR>
 map <TAB> :tabn<CR>
