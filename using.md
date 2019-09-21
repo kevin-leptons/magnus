@@ -1,11 +1,14 @@
 # Using
 
 * [Terms](#terms)
+* [Command](#command)
 * [Open File](#open-file)
 * [Open Tab](#open-tab)
 * [Auto Save](#auto-save)
 * [Search](#search)
 * [Replace](#replace)
+* [Format](#format)
+* [Paste](#paste)
 * [Comment](#comment)
 * [Suggestion](#suggestion)
 * [Bracket](#bracket)
@@ -19,6 +22,11 @@
 * `Esc` - Escape key
 * `Tab` - Key `Tab`
 * An action is specific by **MODE** | `Keys` - Description
+
+## Command
+
+* **Normal** | `;` - Open command history 
+* **Normal** | `;` `;` - Open command history and start new command
 
 ## Open File
 
@@ -60,6 +68,15 @@
 * **Normal** | `Leader` a - Start replace all of words which matchs with word
   under cursor
 * **Normal** | `Leader` s - Start replace a word under cursor
+
+## Format
+
+* **Normal** | `Q` - Format current paragraph
+* **Visual** | `Q` - Format selected paragraph
+
+## Paste
+
+* **Insert** | `F2` - Toggle enter/exit paste mode
 
 ## Comment
 

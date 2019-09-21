@@ -1,3 +1,26 @@
+set nocompatible
+set tw=78
+set listchars=tab:>~
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+set smartindent
+set nowrap
+set mouse=a
+set ignorecase
+set statusline=%f\ %=%l/%L\ %c\ %3p%%
+set laststatus=2
+set cino=N-s
+set autowriteall
+set nobackup
+set noswapfile
+set pastetoggle=<F2>
+
+nnoremap ; q:
+vmap Q gq
+
+filetype indent plugin on
+
 " begin: function load plugin from directory name
 let g:plugin_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 exec 'set rtp^='.g:plugin_dir
@@ -63,20 +86,3 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " begin: load magnus
 call s:load_plugin('magnus')
 " end: load magnus
-
-set nocompatible
-set tw=78
-set listchars=tab:>~
-set tabstop=4
-set shiftwidth=4
-set noexpandtab
-set smartindent
-set nowrap
-set mouse=a
-set ignorecase
-set statusline=%f\ %=%l/%L\ %c\ %3p%%
-set laststatus=2
-set cino=N-s
-set autowriteall
-
-filetype indent plugin on
