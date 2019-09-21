@@ -2,7 +2,7 @@
 
 set -e
 
-source package/spec.sh
+source spec.sh
 TAR_NAME="magnus_${PKG_VERSION}"
 
 rm -rf dist

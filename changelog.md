@@ -1,5 +1,9 @@
 # Changelog
 
+## v5.0.0
+
+* Add: Support macOS under tar distribution
+
 ## v4.0.0
 
 * Improve: Color schema
@@ -8,7 +12,6 @@
 * Remove: Move cursor to middle of screen automatically
 * Add: Allow mouse on terminal
 * Add: Enable syntax highlight
-* Add: Support macOS
 
 ## v3.0.0
 

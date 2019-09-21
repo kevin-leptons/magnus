@@ -2,7 +2,7 @@
 
 set -e
 
-source package/spec.sh
+source spec.sh
 
 if [[ "$PLATFORM" == "Linux" ]]; then
 	bash dist_debian.sh

@@ -2,7 +2,7 @@
 
 set -e
 
-source package/spec.sh
+source spec.sh
 
 INSTALL_DIR="/opt/magnus"
 PKG_DIR="dest$INSTALL_DIR"
@@ -16,6 +16,7 @@ rm -rf dest
 
 mkdir -vp "$PKG_DIR"
 rsync --exclude-from=dist_exclude -r src/ "$PKG_DIR"
+cp vimrc "$PKG_DIR/vimrc"
 
 mkdir -vp "$(dirname "$BIN_FILE")"
 cp cli.sh "$BIN_FILE"
@@ -26,7 +27,7 @@ sed_replace "s/\$VIM_PLUGIN_DIR/${INSTALL_DIR_ESCAPE}/g" \
     "$PKG_DIR/vimrc"
 
 mkdir -vp "$(dirname "$MAN_FILE")"
-cp doc/magnus.1.man $MAN_FILE
+cp magnus.1.man $MAN_FILE
 sed_replace "s/\$PKG_NAME/${PKG_NAME}/g" "$MAN_FILE"
 sed_replace "s/\$PKG_VERSION/${PKG_VERSION}/g" "$MAN_FILE"
 sed_replace "s/\$BUILD_DATE/${BUILD_DATE}/g" "$MAN_FILE"
