@@ -3,6 +3,7 @@
 * [Terms](#terms)
 * [Command](#command)
 * [Open File](#open-file)
+* [Explorer File](#explorer-file)
 * [Open Tab](#open-tab)
 * [Auto Save](#auto-save)
 * [Search](#search)
@@ -25,7 +26,7 @@
 
 ## Command
 
-* **Normal** | `;` - Open command history 
+* **Normal** | `;` - Open command history
 * **Normal** | `;` `;` - Open command history and start new command
 
 ## Open File
@@ -37,6 +38,13 @@
 * **Open** | `Enter` - Open file at current cursor
 * **Open** | `Ctrl` + `f` - Rescan for new files
 * **Open** | `Esc` - Exit file menu
+
+## Explorer File
+
+* **Normal** | `Leader` `e` - Open file explorer, enter mode **Explorer**
+* **Explorer** | `j` - Move cursor down
+* **Explorer** | `k` - Move cursor up
+* **Explorer** | `Enter` - Open current file
 
 ## Open Tab
 
