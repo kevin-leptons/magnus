@@ -1,21 +1,21 @@
 [submodule "plugin/ctrlp.vim"]
 	path = plugin/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim/tree/1.80
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "plugin/auto-pairs"]
 	path = plugin/auto-pairs
-	url = https://github.com/jiangmiao/auto-pairs/tree/v2.0.0
+	url = https://github.com/jiangmiao/auto-pairs.git
 [submodule "plugin/incsearch.vim"]
 	path = plugin/incsearch.vim
-	url = https://github.com/haya14busa/incsearch.vim/tree/v2.0.1
+	url = https://github.com/haya14busa/incsearch.vim.git
 [submodule "plugin/nerdcommenter"]
 	path = plugin/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter/tree/2.5.2
+	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "plugin/supertab"]
 	path = plugin/supertab
-	url = https://github.com/ervandew/supertab/tree/2.1
+	url = https://github.com/ervandew/supertab.git
 [submodule "plugin/vim-easymotion"]
 	path = plugin/vim-easymotion
-	url = https://github.com/easymotion/vim-easymotion/tree/v3.0.1
+	url = https://github.com/easymotion/vim-easymotion.git
 [submodule "plugin/incsearch-easymotion.vim"]
 	path = plugin/incsearch-easymotion.vim
 	url = https://github.com/haya14busa/incsearch-easymotion.vim.git
