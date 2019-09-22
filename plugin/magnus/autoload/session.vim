@@ -1,19 +1,25 @@
+set sessionoptions=blank,tabpages,options,curdir
+
+let g:magnus_session_loaded = 0
+let g:tmp_dir = 'tmp'
+let g:session_file = g:tmp_dir . '/session.vim'
+
 function! EchoInfo(msg)
     echohl MoreMsg | echo a:msg | echohl None
 endfunction
 
-function! magnus#EchoWarning(msg)
+function! EchoWarning(msg)
     echohl WarningMsg | echo a:msg | echohl None
 endfunction
 
-function! magnus#SaveSession()
+function! session#SaveSession()
     if filereadable(g:session_file)
         call delete(g:session_file)
         exec 'mksession '.g:session_file
     endif
 endfunction
 
-function! magnus#MakeSession()
+function! session#MakeSession()
     if !isdirectory(g:tmp_dir)
         call mkdir(g:tmp_dir)
     endif
@@ -26,7 +32,7 @@ function! magnus#MakeSession()
     endif
 endfunction
 
-function! magnus#LoadSession()
+fu! session#LoadSession()
     if argc() == 0
         if filereadable(g:session_file)
             if g:magnus_session_loaded == 0

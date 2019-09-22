@@ -16,9 +16,6 @@ set nobackup
 set noswapfile
 set pastetoggle=<F2>
 
-nnoremap ; q:
-vmap Q gq
-
 filetype indent plugin on
 
 " begin: function load plugin from directory name
@@ -58,12 +55,7 @@ let g:ctrlp_match_window='bottom,order:btt,min:11:max:11:results:10'
 let g:ctrlp_line_prefix = ' '
 let g:ctrlp_match_current_file = 1
 let g:ctrlp_open_new_file = 'r'
-let g:ctrlp_buffer_func = { 'enter': 'BrightHighlightOn' }
-
-function BrightHighlightOn()
-	hi! link CursorLine PmenuSel
-endfunction
-
+let g:ctrlp_buffer_func = { 'enter': 'color#BrightHighlightOn' }
 call s:load_plugin('ctrlp.vim')
 " end: load ctrlp.vim
 
