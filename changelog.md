@@ -1,5 +1,10 @@
 # Changelog
 
+## v5.1.0
+
+* Change: Replace change from `Leader` `c` to `Leader` `f`
+* Change: Open file explorer in new tab
+
 ## v5.0.0
 
 * Remove: Syntax highlight
