@@ -73,9 +73,9 @@
 
 ## Replace
 
-* **Normal** | `Leader` a - Start replace all of words which matchs with word
+* **Normal** | `Leader` `a` - Start replace all of words which matchs with word
   under cursor
-* **Normal** | `Leader` s - Start replace a word under cursor
+* **Normal** | `Leader` `f` - Start replace a word under cursor
 
 ## Format
 
