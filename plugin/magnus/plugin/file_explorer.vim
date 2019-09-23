@@ -1,1 +1,1 @@
-map <Leader>e :Ex<CR>
+map <Leader>e :tabnew<CR>:Ex<CR>
