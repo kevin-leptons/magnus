@@ -17,6 +17,7 @@ set noswapfile
 set pastetoggle=<F2>
 
 filetype indent plugin on
+syntax on
 
 " begin: function load plugin from directory name
 let g:plugin_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
@@ -77,4 +78,5 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " begin: load magnus
 call s:load_plugin('magnus')
+let g:colors_name='distraction'
 " end: load magnus

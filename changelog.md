@@ -2,6 +2,7 @@
 
 ## v5.1.0
 
+* Fix: Syntax highlight and loading color
 * Change: Replace change from `Leader` `c` to `Leader` `f`
 * Change: Open file explorer in new tab
 
