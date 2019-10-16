@@ -1,5 +1,9 @@
 # Changelog
 
+## v5.1.1
+
+* Change: Enable ruler at column 78
+
 ## v5.1.0
 
 * Fix: Syntax highlight and loading color
