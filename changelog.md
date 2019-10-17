@@ -2,7 +2,7 @@
 
 ## v5.1.1
 
-* Change: Enable ruler at column 78
+* Change: Enable ruler at column 80
 * Change: <LEADER>f start to replace from current cursor instead of begin of
   file.
 
