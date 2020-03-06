@@ -81,19 +81,3 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 call s:load_plugin('magnus')
 let g:colors_name='distraction'
 " end: load magnus
-
-au FocusLost * !/usr/local/Cellar/ctags/5.8_1/bin/ctags .
-
-auto BufLeave * call OnBufferLeave()
-auto VimEnter * call OnStartup()
-
-function OnBufferLeave()
-	if @% == ""
-		return
-	endif
-	silent !ctags -a @%
-endfunction
-
-function OnStartup()
-	silent !ctags --exclude .git .
-endfunction
