@@ -1,5 +1,9 @@
 # Changelog
 
+## v5.2.0
+
+* Add: Support ctags to jump between definitions.
+
 ## v5.1.1
 
 * Change: Enable ruler at column 80
