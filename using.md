@@ -111,3 +111,12 @@
 * **Normal** | `Leader` `Leader` - Toggle to create/remove session file at `$(pwd)/tmp/session.vim`
 * On update new version, session need to be remove to take changes. Force
   remove by `rm -rf tmp`
+
+## Tags
+
+* **Normal** | `Ctrl-]` - Jump to definition.
+* **Normal** | `Ctrl-T` - Jump back to previous place.
+* On buffer lose focus, it re-index tags for that buffer.
+* On startup, directory will be index recursively, exclude directory `.git`,
+  `tmp`, `dest`, `dist`.
+* To remove indexing, remove file in `tmp/tags`.
