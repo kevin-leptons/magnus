@@ -114,9 +114,10 @@
 
 ## Tags
 
+* **Normale** | `Leader` `g` - Toggle enable/disable tag for current
+  directory.
 * **Normal** | `Ctrl-]` - Jump to definition.
 * **Normal** | `Ctrl-T` - Jump back to previous place.
 * On buffer lose focus, it re-index tags for that buffer.
-* On startup, directory will be index recursively, exclude directory `.git`,
-  `tmp`, `dest`, `dist`.
-* To remove indexing, remove file in `tmp/tags`.
+* On startup, if ctags is enabled then tags will be re-index and load,
+  recursively, exclude directory `.git`, `tmp`, `dest`, `dist`.
