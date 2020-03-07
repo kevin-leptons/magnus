@@ -1,5 +1,5 @@
 PKG_NAME="magnus"
-PKG_VERSION="5.1.1"
+PKG_VERSION="5.2.0"
 BUILD_DATE=$(date)
 PLATFORM=$(uname)
 
