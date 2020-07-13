@@ -4,6 +4,7 @@
 
 * Remove: Support ctags.
 * Change: Remove last status line.
+* Change: Update `ctrlpvim`, `nerdcommenter` and `vim-easymotion`.
 
 ## v5.2.0
 
