@@ -10,7 +10,7 @@ set nowrap
 set mouse=a
 set ignorecase
 set statusline=%f\ %=%l/%L\ %c\ %3p%%
-set laststatus=2
+set laststatus=0
 set cino=N-s
 set autowriteall
 set nobackup

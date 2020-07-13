@@ -1,5 +1,10 @@
 # Changelog
 
+## v5.3.0
+
+* Remove: Support ctags.
+* Change: Remove last status line.
+
 ## v5.2.0
 
 * Add: Support ctags to jump between definitions.
