@@ -73,8 +73,8 @@
 
 ## Replace
 
-* **Normal** | `Leader` `a` - Start replace all of words which matchs with word
-  under cursor
+* **Normal** | `Leader` `a` - Start replace all of words which matchs with
+  word under cursor
 * **Normal** | `Leader` `f` - Start replace a word under cursor
 
 ## Format
@@ -103,12 +103,15 @@
 
 ## Bracket
 
-* **Insert** | `{` - Open pair of bracket `{...}`, put cursor to between of brackets
-* **Insert** | `}` - If cursor is before of close bracket then move cursor pass through that bracket
+* **Insert** | `{` - Open pair of bracket `{...}`, put cursor to between of
+  brackets
+* **Insert** | `}` - If cursor is before of close bracket then move cursor
+  pass through that bracket
 
 ## Session
 
-* **Normal** | `Leader` `Leader` - Toggle to create/remove session file at `$(pwd)/tmp/session.vim`
+* **Normal** | `Leader` `Leader` - Toggle to create/remove session file at
+  `$(pwd)/tmp/session.vim`
 * On update new version, session need to be remove to take changes. Force
   remove by `rm -rf tmp`
 
