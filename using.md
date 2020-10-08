@@ -114,13 +114,3 @@
   `$(pwd)/tmp/session.vim`
 * On update new version, session need to be remove to take changes. Force
   remove by `rm -rf tmp`
-
-## Tags
-
-* **Normale** | `Leader` `g` - Toggle enable/disable tag for current
-  directory.
-* **Normal** | `Ctrl-]` - Jump to definition.
-* **Normal** | `Ctrl-T` - Jump back to previous place.
-* On buffer lose focus, it re-index tags for that buffer.
-* On startup, if ctags is enabled then tags will be re-index and load,
-  recursively, exclude directory `.git`, `tmp`, `dest`, `dist`.
