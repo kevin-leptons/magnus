@@ -2,6 +2,7 @@
 
 ## v5.3.0
 
+* Remove: Hardcode symbol `Tab`.
 * Remove: Support ctags.
 * Change: Update `ctrlpvim`, `nerdcommenter` and `vim-easymotion`.
 * Change: Support `Linux Console` by change information color to normal.

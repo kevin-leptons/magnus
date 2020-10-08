@@ -4,7 +4,7 @@ set colorcolumn=80
 set listchars=tab:>~
 set tabstop=4
 set shiftwidth=4
-set noexpandtab
+set expandtab
 set smartindent
 set nowrap
 set mouse=a
