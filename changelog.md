@@ -3,7 +3,6 @@
 ## v5.3.0
 
 * Remove: Support ctags.
-* Change: Remove last status line.
 * Change: Update `ctrlpvim`, `nerdcommenter` and `vim-easymotion`.
 * Change: Support `Linux Console` by change information color to normal.
 
