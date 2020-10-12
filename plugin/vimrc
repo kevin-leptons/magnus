@@ -1,6 +1,5 @@
 set nocompatible
 set tw=78
-set colorcolumn=80
 set listchars=tab:>~
 set tabstop=4
 set shiftwidth=4

@@ -4,6 +4,7 @@
 
 * Remove: Hardcode symbol `Tab`.
 * Remove: Support ctags.
+* Remove: Align ruler at column 80th.
 * Change: Update `ctrlpvim`, `nerdcommenter` and `vim-easymotion`.
 * Change: Support `Linux Console` by change information color to normal.
 
